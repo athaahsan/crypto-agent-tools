@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-agent-tools"
+version = "0.1.0"
+description = "Agent-friendly crypto market data, indicators, and research CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+crypto-agent = "main:main"
+
+[tool.setuptools]
+py-modules = ["main", "market_data", "indicators", "research"]
