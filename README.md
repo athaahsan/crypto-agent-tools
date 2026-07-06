@@ -15,25 +15,11 @@ To ask an AI coding agent to use this repo as a local tool or skill, give it a p
 ```text
 I found this repo: https://github.com/athaahsan/crypto-agent-tools
 
-Please make it available as a local AI-agent tool/skill in this environment.
+Make this repo usable as a local AI-agent skill.
 
-Steps:
-1. Clone or open the repo.
-2. Read README.md.
-3. Install the Python CLI from the repo root with:
-   python -m pip install -e .
-4. Verify it works with:
-   crypto-agent tutorial
-5. Use `crypto-agent` as the source of truth for crypto market data, indicators, and deterministic research reports.
-6. If this agent platform has its own skill format, create a thin local wrapper that calls the CLI instead of rewriting the logic.
+Use the `crypto-agent` CLI as the main interface. Read the README for setup and usage. Do not rewrite the tool logic.
 
-Usage rules:
-- Always parse JSON output.
-- If `ok` is false, inspect `error`, `suggestions`, and `tutorial`.
-- Do not present the output as financial advice.
-
-Recommended first report:
-crypto-agent report --symbol BTCUSDT --intervals 1d 4h 1h
+Do not present results as financial advice.
 ```
 
 If the agent cannot install the CLI command, tell it to use the fallback:
